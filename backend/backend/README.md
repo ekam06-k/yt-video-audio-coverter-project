@@ -16,8 +16,6 @@ I kindly request you to consider the design, layout, and user interface part of 
 
 Thank you for your kind understanding.  
 
-**– Pooja**  
-B.Tech CSE, 4th Semester, Section B  
 
 
 
@@ -237,3 +235,4 @@ For issues and questions:
 ---
 
 **Note**: This application requires an active internet connection and depends on external services for video processing.
+
