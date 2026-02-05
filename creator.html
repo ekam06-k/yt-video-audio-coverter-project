@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url("bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: #ff6600;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #003366;
+  text-decoration: underline;
+}
+
+.developers-section {
+  background-color: #fff3e0;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.dev-title h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+  padding-top:50px;
+}
+
+.dev-title p {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.dev-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom:30px;
+}
+
+.dev-card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dev-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dev-avatar {
+  font-size: 3em;
+}
+
+.dev-card h3 {
+  color: #ff6600;
+  margin: 10px 0 5px;
+}
+
+.role {
+  color: #444;
+  font-weight: 600;
+}
+
+.bio {
+  color: #555;
+  font-size: 15px;
+  margin: 10px 0 20px;
+  line-height: 1.5;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 8px;
+  text-decoration: none;
+  color: #ff6600;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #cc5200;
+}
+ 
+ 
+
+.footer {
+  background:rgb(224, 128, 32);
+  color: #fff;
+  padding: 50px 50px 20px;
+  font-family: 'Poppins', sans-serif;
+  top:40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo {
+  max-width: 300px;
+}
+
+.footer-logo p {
+  color:white;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.footer-links,
+.footer-contact {
+  min-width: 180px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  color: #f7d2b9;
+  margin-bottom: 12px;
+  font-size: 30px;
+}
+
+.footer-links a {
+  display: block;
+  color: #fde6e6;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ec6009;
+}
+
+.footer-contact p {
+  color: #f9f0f0;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #f9f1e8;
+}
+
+.footer-bottom span {
+  color: #f5a067;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+<header class="navbar">
+  <div class="logo">
+    🎵 <span class="stream-sound">Stream</span><span class="sp1">2</span><span class="stream-sound">Sound</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="guide.html">Guide</a>
+    <a href="">Features</a>
+    <a href="creator.html">Creator</a>
+    <a href="#">About Us</a>
+  </nav>
+</header>
+<!--developer-->
+  <section class="developers-section">
+ <div class="dev-title">
+   <h2>👩‍💻 Meet the Creators</h2>
+   <p>Our talented minds behind Stream2Sound</p>
+ </div>
+ <div class="dev-grid">
+   <div class="dev-card">
+     <div class="dev-avatar">👩‍💻</div>
+     <h3>Gurleen Kaur</h3>
+     <p class="role">Frontend Developer</p>
+     <p class="bio">Passionate about crafting responsive user interfaces and delivering engaging user experiences with m
+     <div class="social-links">
+       <a href="https://www.linkedin.com/in/gurleen-kaur-a217b9287/" class="linkedin">🔗 LinkedIn</a>
+     </div>
+   </div>
+   <div class="dev-card">
+     <div class="dev-avatar">👩‍💻</div>
+     <h3>Ekampreet Kaur</h3>
+     <p class="role">Frontend Developer</p>
+     <p class="bio">Focused on building elegant, high-performance web applications and exploring creative UI animations 
+     <div class="social-links">
+       <a href="www.linkedin.com/in/ekampreet-kaur-2b68bb287" class="linkedin">🔗 LinkedIn</a>
+     </div>
+   </div>
+ </div>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      🎵 <span class="stream-sound">Stream</span><span class="sp1">2</span><span class="stream-sound">So
+      <p>Transforming your videos into pure, high-quality sound.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <a href="project.html">Home</a>
+      <a href="guide.html">Guide</a>
+      <a href="#">Features</a>
+      <a href="#">About Us</a>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>📧 stream2sound@gmail.com</p>
+      <p>📍 Ludhiana, India</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Stream2Sound. All rights reserved. | Built  by Ekampreet Kaur & Gurleen Kaur</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
