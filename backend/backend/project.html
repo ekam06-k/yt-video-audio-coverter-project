@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube to MP3/MP4 Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fab fa-youtube"></i> YouTube Converter</h1>
+            <p>Convert YouTube videos to MP3 or MP4 and download them instantly</p>
+        </header>
+
+        <main>
+            <div class="converter-section">
+                <div class="input-group">
+                    <input type="url" id="youtubeUrl" placeholder="Paste YouTube URL here..." aria-label="YouTube URL input" required>
+                    <button id="getInfoBtn" class="btn btn-secondary">
+                        <i class="fas fa-search"></i> Get Info
+                    </button>
+                </div>
+
+                <div id="videoInfo" class="video-info hidden">
+                    <div class="video-preview">
+                        <img id="videoThumbnail" src="" alt="Video Thumbnail">
+                        <div class="video-details">
+                            <h3 id="videoTitle"></h3>
+                            <p id="videoDuration"></p>
+                            <p id="videoUploader"></p>
+                        </div>
+                    </div>
+
+                    <div class="format-selection">
+                        <h3>Choose Format:</h3>
+                        <div class="format-buttons">
+                            <button id="downloadMp3" class="btn btn-primary">
+                                <i class="fas fa-music"></i> Download MP3
+                            </button>
+                            <button id="downloadMp4" class="btn btn-primary">
+                                <i class="fas fa-video"></i> Download MP4
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="progressSection" class="progress-section hidden">
+                    <h3>Download Progress</h3>
+                    <div class="progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                    <p id="progressText">0%</p>
+                    <div id="downloadStatus" class="status-message"></div>
+                </div>
+
+                <div id="downloadComplete" class="download-complete hidden">
+                    <div class="success-message">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Download Complete!</h3>
+                        <a id="downloadLink" href="#" class="btn btn-success" download>
+                            <i class="fas fa-download"></i> Download File
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-music"></i>
+                        <h3>High Quality MP3</h3>
+                        <p>Download audio in high quality MP3 format</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-video"></i>
+                        <h3>HD Video Download</h3>
+                        <p>Download videos in various qualities including HD</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Fast Processing</h3>
+                        <p>Quick conversion and download process</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safe & Secure</h3>
+                        <p>Your privacy is protected, no data stored</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 YouTube Converter. For educational purposes only.</p>
+        </footer>
+    </div>
+
+    <div id="errorModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Error</h3>
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

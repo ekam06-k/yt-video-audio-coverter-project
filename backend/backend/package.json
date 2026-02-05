@@ -1,0 +1,34 @@
+{
+  "name": "youtube-mp3-converter",
+  "version": "1.0.0",
+  "description": "A YouTube to MP3/MP4 converter and downloader",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "ultra-fast": "node server-ultra-fast.js",
+    "reliable": "node server-reliable.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "youtube",
+    "mp3",
+    "mp4",
+    "converter",
+    "downloader"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "^2.7.0",
+    "path": "^0.12.7",
+    "youtube-dl-exec": "^3.0.23",
+    "yt-dlp-wrap": "^2.3.12"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
